@@ -58,21 +58,6 @@ android_app_import {
 }
 
 android_app_import {
-    name: "CNEService",
-    owner: "lge",
-
-    certificate: "platform",
-
-    dex_preopt: {
-        enabled: false,
-    },
-
-    privileged: true,
-    apk: "proprietary/priv-app/CNEService/CNEService.apk",
-
-}
-
-android_app_import {
     name: "DCMO",
     owner: "lge",
 
@@ -201,14 +186,6 @@ android_app_import {
 
     privileged: true,
     apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
-
-}
-
-java_import {
-    name: "cneapiclient",
-    owner: "lge",
-    jars: ["proprietary/framework/cneapiclient.jar"],
-    system_ext_specific: true,
 
 }
 
