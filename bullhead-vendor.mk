@@ -78,6 +78,14 @@ PRODUCT_COPY_FILES += \
     vendor/lge/bullhead/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
     vendor/lge/bullhead/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
     vendor/lge/bullhead/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so
+#   vendor/lge/bullhead/proprietary/vendor/bin/sensors.qcom:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qcom \
+#   vendor/lge/bullhead/proprietary/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so \
+#   vendor/lge/bullhead/proprietary/vendor/lib/libsensor_lge_cal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_lge_cal.so \
+#   vendor/lge/bullhead/proprietary/vendor/lib/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_reg.so \
+#   vendor/lge/bullhead/proprietary/vendor/lib/libsensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_test.so \
+#   vendor/lge/bullhead/proprietary/vendor/lib/libsensor_thresh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_thresh.so \
+#   vendor/lge/bullhead/proprietary/vendor/lib/libsensor_user_cal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_user_cal.so \
+#   vendor/lge/bullhead/proprietary/lib64/hw/sensors.msm8992.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/sensors.msm8992.so 
 
 PRODUCT_PACKAGES += \
     HiddenMenu \
@@ -110,6 +118,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/bullhead/proprietary/vendor/etc/diag/ims_epdg.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag/ims_epdg.cfg \
     vendor/lge/bullhead/proprietary/vendor/etc/diag/wlan.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/diag/wlan.cfg \
     vendor/lge/bullhead/proprietary/vendor/etc/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile0.conf \
+    vendor/lge/bullhead/proprietary/vendor/firmware/ice40.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ice40.bin \
     vendor/lge/bullhead/proprietary/vendor/firmware/Data.msc:$(TARGET_COPY_OUT_VENDOR)/firmware/Data.msc \
     vendor/lge/bullhead/proprietary/vendor/firmware/a420_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pfp.fw \
     vendor/lge/bullhead/proprietary/vendor/firmware/a420_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pm4.fw \
@@ -148,15 +157,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/bullhead/proprietary/vendor/firmware/cpe.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/cpe.mdt \
     vendor/lge/bullhead/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
     vendor/lge/bullhead/proprietary/vendor/firmware/double_twist.napp:$(TARGET_COPY_OUT_VENDOR)/firmware/double_twist.napp \
-    vendor/lge/bullhead/proprietary/vendor/firmware/fpctzappfingerprint.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzappfingerprint.b00 \
-    vendor/lge/bullhead/proprietary/vendor/firmware/fpctzappfingerprint.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzappfingerprint.b01 \
-    vendor/lge/bullhead/proprietary/vendor/firmware/fpctzappfingerprint.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzappfingerprint.b02 \
-    vendor/lge/bullhead/proprietary/vendor/firmware/fpctzappfingerprint.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzappfingerprint.b03 \
-    vendor/lge/bullhead/proprietary/vendor/firmware/fpctzappfingerprint.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzappfingerprint.mdt \
     vendor/lge/bullhead/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
     vendor/lge/bullhead/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
-    vendor/lge/bullhead/proprietary/vendor/firmware/libpn548ad_fw.so:$(TARGET_COPY_OUT_VENDOR)/firmware/libpn548ad_fw.so \
-    vendor/lge/bullhead/proprietary/vendor/firmware/nanohub.full.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nanohub.full.bin \
     vendor/lge/bullhead/proprietary/vendor/firmware/napp_list.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/napp_list.cfg \
     vendor/lge/bullhead/proprietary/vendor/firmware/otp30.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/otp30.bin \
     vendor/lge/bullhead/proprietary/vendor/firmware/pickup_gesture.napp:$(TARGET_COPY_OUT_VENDOR)/firmware/pickup_gesture.napp \
@@ -184,10 +186,10 @@ PRODUCT_COPY_FILES += \
     vendor/lge/bullhead/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
     vendor/lge/bullhead/proprietary/vendor/lib/hw/activity_recognition.bullhead.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/activity_recognition.bullhead.so \
     vendor/lge/bullhead/proprietary/vendor/lib/hw/bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/bluetooth.default.so \
-    vendor/lge/bullhead/proprietary/vendor/lib/hw/nfc_nci.bullhead.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/nfc_nci.bullhead.so \
     vendor/lge/bullhead/proprietary/vendor/lib/hw/sound_trigger.primary.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.msm8992.so \
     vendor/lge/bullhead/proprietary/vendor/lib/hw/tof.vl6180.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/tof.vl6180.so \
     vendor/lge/bullhead/proprietary/vendor/lib/hw/vulkan.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.msm8992.so \
+    vendor/lge/bullhead/proprietary/vendor/lib/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libslimclient.so \
     vendor/lge/bullhead/proprietary/vendor/lib/lib-dplmedia.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-dplmedia.so \
     vendor/lge/bullhead/proprietary/vendor/lib/lib-ims-rcscmjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-ims-rcscmjni.so \
     vendor/lge/bullhead/proprietary/vendor/lib/lib-imsSDP.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsSDP.so \
@@ -282,7 +284,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/bullhead/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
     vendor/lge/bullhead/proprietary/vendor/lib/libllvm-qgl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qgl.so \
     vendor/lge/bullhead/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
-    vendor/lge/bullhead/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/lge/bullhead/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
     vendor/lge/bullhead/proprietary/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so \
     vendor/lge/bullhead/proprietary/vendor/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_cpp_module.so \
@@ -404,8 +405,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/bullhead/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
     vendor/lge/bullhead/proprietary/vendor/lib64/hw/activity_recognition.bullhead.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/activity_recognition.bullhead.so \
     vendor/lge/bullhead/proprietary/vendor/lib64/hw/bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/bluetooth.default.so \
-    vendor/lge/bullhead/proprietary/vendor/lib64/hw/nfc_nci.bullhead.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/nfc_nci.bullhead.so \
-    vendor/lge/bullhead/proprietary/vendor/lib64/hw/fingerprint.bullhead.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.bullhead.so \
     vendor/lge/bullhead/proprietary/vendor/lib64/hw/flp.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/flp.default.so \
     vendor/lge/bullhead/proprietary/vendor/lib64/hw/sound_trigger.primary.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.msm8992.so \
     vendor/lge/bullhead/proprietary/vendor/lib64/hw/vulkan.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.msm8992.so \
@@ -469,7 +468,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/bullhead/proprietary/vendor/lib64/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_client.so \
     vendor/lge/bullhead/proprietary/vendor/lib64/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_wifihal.so \
     vendor/lge/bullhead/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
-    vendor/lge/bullhead/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/lge/bullhead/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/lge/bullhead/proprietary/vendor/lib64/libmmcamera2_q3a_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_q3a_core.so \
     vendor/lge/bullhead/proprietary/vendor/lib64/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_stats_algorithm.so \
@@ -507,11 +505,34 @@ PRODUCT_COPY_FILES += \
     vendor/lge/bullhead/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/lge/bullhead/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
     vendor/lge/bullhead/proprietary/vendor/media/LMspeed_508.emd:$(TARGET_COPY_OUT_VENDOR)/media/LMspeed_508.emd \
-    vendor/lge/bullhead/proprietary/vendor/media/PFFprec_600.emd:$(TARGET_COPY_OUT_VENDOR)/media/PFFprec_600.emd
+    vendor/lge/bullhead/proprietary/vendor/media/PFFprec_600.emd:$(TARGET_COPY_OUT_VENDOR)/media/PFFprec_600.emd \
+#   vendor/lge/bullhead/proprietary/vendor/lib64/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor1.so \
+#   vendor/lge/bullhead/proprietary/vendor/lib64/libsensor_lge_cal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_lge_cal.so \
+#   vendor/lge/bullhead/proprietary/vendor/lib64/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_reg.so \
+#   vendor/lge/bullhead/proprietary/vendor/lib64/libsensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_test.so \
+#   vendor/lge/bullhead/proprietary/vendor/lib64/libsensor_thresh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_thresh.so \
+#   vendor/lge/bullhead/proprietary/vendor/lib64/libsensor_user_cal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_user_cal.so \
+#   vendor/lge/bullhead/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
+#   vendor/lge/bullhead/proprietary/vendor/lib64/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libslimclient.so \
+
+
+# NFC
+PRODUCT_COPY_FILES += \
+    vendor/lge/bullhead/proprietary/vendor/lib/hw/nfc_nci.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/nfc_nci.msm8992.so \
+    vendor/lge/bullhead/proprietary/vendor/lib64/hw/nfc_nci.msm8992.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/nfc_nci.msm8992.so \
+    vendor/lge/bullhead/proprietary/vendor/lib/hw/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.nfc@1.0-impl.so \
+    vendor/lge/bullhead/proprietary/vendor/lib64/hw/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.nfc@1.0-impl.so
+
 
 PRODUCT_PACKAGES += \
     libtime_genoff \
     datastatusnotification \
-    libqmi_cci \
     libqmi_common_so \
+    qcrilhook \
+    libqmi \
+    libqmi_client_qmux \
+    libqmiservices \
+    libqmi_cci \
+    libqmi_client_helper \
+    libmdmdetect \
     ims
