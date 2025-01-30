@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- These are configurations that should exist on bullhead only. -->
+<!-- These are configurations that should exist on talkman only. -->
 <config>
     <!-- Allow tethering entitlement app in background -->
     <allow-in-power-save package="com.lge.entitlement" />
